@@ -33,7 +33,7 @@
 
 *O comanda gresita nu este interpretata si se afiseaza "Unknown command"
 
-* request.h/request.cpp
+## request.h/request.cpp
 
 	Implementarea functiilor compute_get_request, compute_post_request, 
 	compute_delete_request si send_to_server.
