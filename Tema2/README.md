@@ -1,15 +1,14 @@
-helper.h
+## helper.h
 
 In fisierul helper.h am definit urmatoarele structuri:
-	udp_message - pentru mesajele primite de la clientii udp
-	from_subscriber - pentru mesajele primite de la clientii tcp
-	tcp_message - pentru mesajele pe care le trimite serverul
-				  la clientii abonati
-	client - datele despre un client tcp abonat
+* udp_message - pentru mesajele primite de la clientii udp
+* from_subscriber - pentru mesajele primite de la clientii tcp
+* tcp_message - pentru mesajele pe care le trimite serverul la clientii abonati
+* client - datele despre un client tcp abonat
 
 
 
-server.cpp
+## server.cpp
 
 Serverul:
  	-asteapta conexiuni tcp, daca a primit un request de la un client tcp
@@ -42,7 +41,7 @@ Serverul:
 
 
 
-subscriber.cpp
+## subscriber.cpp
 
 Clientul udp asteapta ca argument id.ul si verifica daca acesta are mai mult de 10 caractere
 caz in care trimite meaj de eroare si opreste programul. Dupa ce se conecteaza la server isi
