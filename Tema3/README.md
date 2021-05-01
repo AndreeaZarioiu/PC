@@ -31,7 +31,7 @@
 		afiseaza eroare daca a primit una altfel afiseaza informatiile 
 		cerute parsate prin json::parse. 
 
-*O comanda gresita nu este interpretata si se afiseaza "Unknown command"
+      O comanda gresita nu este interpretata si se afiseaza "Unknown command"
 
 ## request.h/request.cpp
 
