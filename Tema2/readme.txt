@@ -1,6 +1,3 @@
-========================== Zarioiu Andreea 323CA ============================
-
-
 helper.h
 
 In fisierul helper.h am definit urmatoarele structuri:
@@ -58,17 +55,6 @@ unsubscribe completeaza un mesaj de tipul from_subscriber, il trimite serverului
 l-a trimis cu succes, consemneaza actiunea realizata afisand subscribed/unsubscribed si 
 numele topicului.
 
-Functionalitati
-
-Aplicatia implementeaza toate functionalitatile cerute inclusiv store&forward, astfel
-daca un client se deconecteaza de la server, cand se va reconecta se vor pastra topicurile
-la care era abonat si va primi toate mesajele pierdute de la topicurile abonate cu sf = 1.
-
-Makefile
-
-Makefileul contine si regulile run_server ce deschide un server cu portul 8080 si 
-ip.ul 127.0.0.1 si run_client ce ruleaza subscriber.cpp cu portul 8080, ip.ul 127.0.0.1 
-si id.ul andreea200 date ca parametru. 
 
 
 
