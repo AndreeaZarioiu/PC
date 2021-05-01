@@ -11,7 +11,7 @@ In fisierul helper.h am definit urmatoarele structuri:
 ## server.cpp
 
 Serverul:
- 	-asteapta conexiuni tcp, daca a primit un request de la un client tcp
+ * asteapta conexiuni tcp, daca a primit un request de la un client tcp
  	completeaza o structura client cu ip.ul, portul si file descriptorul
  	acestuia dupa care asteapata sa primeasca id.ul clientului. Clientul
  	este inserat intr-un unordered map (subscribers), iar la primirea id-ului
@@ -23,16 +23,16 @@ Serverul:
  	i se trimit mesajele de la topicurile la care se abonase cu sf 1 din backUp si
  	este reabonat la topicurile la care se abonase inainte sa se deconecteze
  	
- 	-asteapta mesaje udp pentru socketul udp_socket si le converteste prin functia
+ * asteapta mesaje udp pentru socketul udp_socket si le converteste prin functia
  	convert_msg in mesaje pentru clientii tcp (tcp_message) in functie de tipul 
  	acestora dupa care le trimite la clientii abonati la topicul respectiv
  	sau le pastreaza in backUp pentru clientii care s-au deconectat si erau abonati la
  	topicurile respective cu sf 1
 
- 	-asteapta doar comanada exit de la stdin pentru care trimite clientilor comanda exit
+ * asteapta doar comanada exit de la stdin pentru care trimite clientilor comanda exit
  	si ii deconecteaza, inchizand toti socketii.
 
- 	-asteapta comenzi de la clientii tcp sub forma from_subscriber, daca sunt 
+ * asteapta comenzi de la clientii tcp sub forma from_subscriber, daca sunt 
  	de subscribe ii insereaza intr-un unorder_map, domains, parcurs de fiecare data 
  	cand serverul primeste mesaje udp, iar daca sf.ul este 1 ii adauga si in toStore, 
  	pentru situatia in care se vor deconecta de la server. Daca mesajul este de unsubscribe,
