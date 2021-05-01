@@ -1,4 +1,4 @@
-1. Parsare
+## Parsare
 
 In fisierul data.h am structura rtable_entry ce modeleaza forma unui
 element din tabela de rutare pe care o pastrez sub forma unui vector
@@ -6,7 +6,7 @@ de astfel de structuri. Prin functia parse_rtable (din data.h) citesc
 din fisierul rtable.txt linie cu linie si dublez dimensiunea vectorului
 cand este necesar.
 
-2. Protocolul Arp
+## Protocolul Arp
 
 Cand primesc un pachet verific daca ether_type este de tip Arp
 dupa care daca este Arp request caz in care modific pachetul primit
@@ -21,7 +21,7 @@ de tip Arp request, completez adresa broadcast si celelalte campuri necesare
 (arp_spa pentru ip-ul a carui mac il caut, arp_op pentru tipul operatiei...).
 Mesajul il bag in coada si trimit requestul.
 
-3. Procesul de dirijare
+## Procesul de dirijare
 
 Tabela de rutare o sortez prin qsort crescator dupa prefix si masca iar parcurgerea
 o realizez prin cautare binara. Dirijarea este precum in laboratorul 4, primesc un pachet,
@@ -32,7 +32,7 @@ pachetul sa nu aiba ttl < 1 (daca are trimit icmp time exceeded), recalculez sum
 (daca nu gasesc trimit icmp host unreachable), decrementez ttl.ul, recalculez suma de control, 
 caut in tabela arp macul corespunzator si trimit pachetul.
 
-4. Protocolul ICMP
+## Protocolul ICMP
 
 -daca routerul primeste un icmp echo request destinat lui raspunde inversand sursa cu 
 destinatia pachetului si schimbandu-i tipul in ICMP_ECHOREPLY.
