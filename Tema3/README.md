@@ -35,16 +35,16 @@
 
 ## request.h/request.cpp
 
-	Implementarea functiilor compute_get_request, compute_post_request, 
-	compute_delete_request si send_to_server.
+Implementarea functiilor compute_get_request, compute_post_request, 
+compute_delete_request si send_to_server.
 
-* Nlohmann 
+* Nlohmann - 
+Am folosit biblioteca nlohmann pentru parsarea 
+listei de carti primite la get_books. In functiile din main, printBookData 
+si printLibrary trimit 
+portiunea din raspunsul de la server ce trebuie parsata si prin 
+json::parse obtin un array de obiecte json pe care il parcurg.
 	
-	Am folosit biblioteca nlohmann pentru parsarea 
-	listei de carti primite la get_books. In functiile din main, printBookData 
-	si printLibrary trimit 
-	portiunea din raspunsul de la server ce trebuie parsata si prin 
-	json::parse obtin un array de obiecte json pe care il parcurg.
 * Makefile
 	make run - compileaza si ruleaza programul
 
