@@ -1,16 +1,4 @@
- 		=======   Zarioiu Andreea 323CA ========
-		   		Tema 3
-
-
-
 client.c
-
-Programul implementeaza toate comenzile cerute:
-
-
-*** COMENZILE get_books, get_book si enter_library dureaza 5 secunde
-	in plus fata de restul
-
 
 exit : inchide programul
 register : primeste username si password de la stdin, fiecare pe
@@ -52,9 +40,9 @@ request.h/request.cpp
 
 Nlohmann 
 	
-	Am folosit biblioteca nlohmann, recomandata in enunt pentru parsarea 
-	listei de carti primite la get_books si a informatiilor primite la 
-	get_book. In functiile din main, printBookData si printLibrary trimit 
+	Am folosit biblioteca nlohmann pentru parsarea 
+	listei de carti primite la get_books. In functiile din main, printBookData 
+	si printLibrary trimit 
 	portiunea din raspunsul de la server ce trebuie parsata si prin 
 	json::parse obtin un array de obiecte json pe care il parcurg.
 Makefile
